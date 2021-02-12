@@ -1,0 +1,10 @@
+a0 temp in
+d2 switch in
+d3 heater gate
+d4 vacpump gate
+
+5v to a0
+vin from xt30
+gnd
+
+
