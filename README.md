@@ -21,7 +21,7 @@ heatsink to fit mosfets
 
 470uF 35v elecotrolytic capacitor
 
-car tyre inflator pump (12v emergency inflatorkit type taken from a scrap peugeot car) modified to be vacuum pump modifications depend on your particular pump but you need to remove valving from pump and add a pair of check valves
+car tyre inflator pump (12v emergency inflator kit type taken from a scrap peugeot car) modified to be vacuum pump modifications depend on your particular pump but you need to remove valving from pump and add a pair of check valves
 
 2 aquarium check valves
 
