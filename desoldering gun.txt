@@ -1,3 +1,6 @@
+basic current pin mapping.
+definitely requires improved cooling for the fets and an actual 5v regulator to allow some separation between arduino and noisy vacuum pump
+
 a0 temp in
 d2 switch in
 d3 heater gate
