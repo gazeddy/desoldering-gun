@@ -1,9 +1,8 @@
 # Desoldering-Gun
 Arduino Based Desoldering Gun   
 
-im building an arduino based
-desoldering gun controller owing to the fact I bought the gun without a base station very cheap. 
-currently its pretty dumb but functional. 
+Im building an arduino based desoldering gun controller owing to the fact I bought the gun without a base station very cheap. 
+Currently its pretty dumb but functional. 
 Plans include adding lcd and rotary encode for temp control
 
 #Current BOM
