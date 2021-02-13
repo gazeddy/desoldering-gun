@@ -5,7 +5,7 @@ Im building an arduino based desoldering gun controller owing to the fact I boug
 Currently its pretty dumb but functional. 
 Plans include adding lcd and rotary encode for temp control
 
-#Current BOM
+# Current BOM
 
 Arduino Nano
 
