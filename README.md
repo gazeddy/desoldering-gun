@@ -7,6 +7,7 @@ currently its pretty dumb but functional.
 Plans include adding lcd and rotary encode for temp control
 
 #Current BOM
+
 Arduino Nano
 
 RS Pro Desoldering Gun
