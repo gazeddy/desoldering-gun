@@ -11,6 +11,6 @@ RS Pro Desoldering Gun
 2 Mosfets
 heatsink to fit mosfets
 30mm 5v cooling fan
-3 1k resistors
+5 1k resistors
 470uF 35v elecotrolytic capacitor
 car tyre inflator pump (12v emergency inflatorkit type) modified to be vacuum pump
