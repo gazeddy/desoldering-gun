@@ -1,13 +1,6 @@
 #include <Arduino.h>
-#include <Wire.h>
-#include <LiquidCrystal_I2C.h>
-
 const int Temp = A0;  // Analog input pin that the potentiometer is attached to
-const int analogOutPin = 9; // Analog output pin that the LED is attached to
-
 int sensorValue = 0;        // value read from the pot
-int outputValue = 0;        // value output to the PWM (analog out)
-
 
 void setup() {
   //start serial connection
@@ -34,7 +27,7 @@ void loop() {
   // Keep in mind the pull-up means the pushbutton's logic is inverted. It goes
   // HIGH when it's open, and LOW when it's pressed. Turn on pin 13 when the
   // button's pressed, and off when it's not:
-  if (switchVal == HIGH && sensorValue <= 110 ) { 
+  if (switchVal == HIGH ) { 
     digitalWrite(4, LOW);
   } else {
     digitalWrite(4, HIGH);
