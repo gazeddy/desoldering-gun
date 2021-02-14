@@ -6,7 +6,7 @@ void setup() {
   //start serial connection
   Serial.begin(9600);
   //configure pin 2 as an input and enable the internal pull-up resistor
-  pinMode(2, INPUT_PULLUP);
+  pinMode(2, INPUT);
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
   pinMode(13, OUTPUT);
