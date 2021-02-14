@@ -39,7 +39,7 @@ void loop() {
     digitalWrite(D3, LOW);
     digitalWrite(D13, LOW);
   } else {
-    digitalWrite(3, HIGH);
+    digitalWrite(D3, HIGH);
     digitalWrite(D13, HIGH);
   }
 }
