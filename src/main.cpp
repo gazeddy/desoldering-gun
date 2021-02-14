@@ -7,14 +7,10 @@ int sensorValue = 0;        // value read from the pot
 
 void setup() {
  Serial.begin(9600);
- pinMode(D1, INPUT_PULLUP);
+ pinMode(D1, INPUT);
  pinMode(D3, OUTPUT);
  pinMode(D4, OUTPUT);
-<<<<<<< HEAD
  pinMode(D13, OUTPUT);
-=======
- pinMode(D13, OUTPUT);
->>>>>>> 8ea8565180f742cc98daed2f29f6e47c5f7aa225
 
 }
 
