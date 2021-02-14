@@ -1,6 +1,6 @@
 #include <Arduino.h>
-const int Temp = A0;  // Analog input pin that the potentiometer is attached to
-int sensorValue = 0;        // value read from the pot
+const int Temp = A0;  // Analog input pin that the temp sensor is connected too
+int sensorValue = 0;        // value read from the temp sensor
 
 void setup() {
  Serial.begin(9600);
@@ -12,19 +12,19 @@ void setup() {
 }
 
 void loop() {
-  // read the analog in value:
+  // read the temp value:
   sensorValue = analogRead(Temp);
-  //read the pushbutton value into a variable
+  //read the switch value into a variable
   int switchVal = digitalRead(1);
-  //print out the value of the pushbutton
+  //print out the value of the switch and temp sensor
  Serial.print("sensor = ");
   Serial.print(sensorValue);
   Serial.print("\t switch = ");
   Serial.println(switchVal);
                 
-  // Keep in mind the pull-up means the pushbutton's logic is inverted. It goes
-  // HIGH when it's open, and LOW when it's pressed. Turn on pin 13 when the
-  // button's pressed, and off when it's not:
+  // Keep in mind the pull-up means the switches logic is inverted. It goes
+  // HIGH when it's open, and LOW when it's pressed. Turn on inbuilt led when the
+  // temp sensor is above setpoint and off when it's not:
   if (switchVal == HIGH) { 
     digitalWrite(3, LOW);
     Serial.print("Pump Off ");
