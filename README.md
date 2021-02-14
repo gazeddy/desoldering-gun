@@ -4,6 +4,8 @@ Arduino Based Desoldering Gun
 Im building an arduino based desoldering gun controller owing to the fact I bought the gun without a base station very cheap. 
 Currently its pretty dumb but functional. 
 Plans include adding lcd and rotary encode for temp control
+# USE SEEEDXIAO BRANCH FOR SEEDXIAO
+
 
 # Current BOM
 
@@ -17,7 +19,7 @@ heatsink to fit mosfets
 
 30mm 5v cooling fan
 
-5 1k resistors
+6 1k resistors
 
 470uF 35v elecotrolytic capacitor
 
