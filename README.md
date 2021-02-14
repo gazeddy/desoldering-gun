@@ -7,7 +7,7 @@ Plans include adding lcd and rotary encode for temp control
 
 # Current BOM
 
-Arduino Nano
+Seeed XIAO
 
 RS Pro Desoldering Gun
 
@@ -17,9 +17,7 @@ heatsink to fit mosfets
 
 30mm 5v cooling fan
 
-5 1k resistors
-
-470uF 35v elecotrolytic capacitor
+5 1k resistors (values arent important being used for pullup and gate-drain along with io protection)
 
 car tyre inflator pump (12v emergency inflator kit type taken from a scrap peugeot car) modified to be vacuum pump modifications depend on your particular pump but you need to remove valving from pump and add a pair of check valves
 
