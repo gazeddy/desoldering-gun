@@ -1,7 +1,4 @@
 #include <Arduino.h>
-//#include <Wire.h>
-//#include <LiquidCrystal_I2C.h>
-
 const int Temp = A0;  // Analog input pin that the potentiometer is attached to
 int sensorValue = 0;        // value read from the pot
 
@@ -28,17 +25,20 @@ void loop() {
   // Keep in mind the pull-up means the pushbutton's logic is inverted. It goes
   // HIGH when it's open, and LOW when it's pressed. Turn on pin 13 when the
   // button's pressed, and off when it's not:
-  if (switchVal == HIGH && sensorValue <= 110 ) { 
+  if (switchVal == HIGH) { 
     digitalWrite(3, LOW);
+    Serial.print("Pump Off ");
   } else {
     digitalWrite(3, HIGH);
+    Serial.print("Pump On ");
   }
   if (sensorValue >=135) {
     digitalWrite(2, LOW);
     digitalWrite(13, LOW);
+    Serial.print("Heater Off ");
   } else {
     digitalWrite(2, HIGH);
     digitalWrite(13, HIGH);
+    Serial.print("Heater On ");
   }
 }
-
