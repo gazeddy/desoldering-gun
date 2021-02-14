@@ -7,10 +7,10 @@ int sensorValue = 0;        // value read from the pot
 
 void setup() {
  Serial.begin(9600);
- pinMode(D1, INPUT);
- pinMode(D3, OUTPUT);
- pinMode(D4, OUTPUT);
- pinMode(D13, OUTPUT);
+ pinMode (1, INPUT);
+ pinMode(2, OUTPUT);
+ pinMode(3, OUTPUT);
+ pinMode(13, OUTPUT);
 
 }
 
@@ -18,7 +18,7 @@ void loop() {
   // read the analog in value:
   sensorValue = analogRead(Temp);
   //read the pushbutton value into a variable
-  int switchVal = digitalRead(D1);
+  int switchVal = digitalRead(1);
   //print out the value of the pushbutton
  Serial.print("sensor = ");
   Serial.print(sensorValue);
@@ -29,15 +29,16 @@ void loop() {
   // HIGH when it's open, and LOW when it's pressed. Turn on pin 13 when the
   // button's pressed, and off when it's not:
   if (switchVal == HIGH && sensorValue <= 110 ) { 
-    digitalWrite(D4, LOW);
+    digitalWrite(3, LOW);
   } else {
-    digitalWrite(D4, HIGH);
+    digitalWrite(3, HIGH);
   }
   if (sensorValue >=135) {
-    digitalWrite(D3, LOW);
-    digitalWrite(D13, LOW);
+    digitalWrite(2, LOW);
+    digitalWrite(13, LOW);
   } else {
-    digitalWrite(D3, HIGH);
-    digitalWrite(D13, HIGH);
+    digitalWrite(2, HIGH);
+    digitalWrite(13, HIGH);
   }
 }
+
