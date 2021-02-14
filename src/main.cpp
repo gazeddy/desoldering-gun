@@ -4,8 +4,6 @@
 
 const int Temp = A0;  // Analog input pin that the potentiometer is attached to
 int sensorValue = 0;        // value read from the pot
-int outputValue = 0;        // value output to the PWM (analog out)
-
 
 void setup() {
  Serial.begin(9600);
