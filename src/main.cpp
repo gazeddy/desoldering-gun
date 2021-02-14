@@ -10,7 +10,11 @@ void setup() {
  pinMode(D1, INPUT_PULLUP);
  pinMode(D3, OUTPUT);
  pinMode(D4, OUTPUT);
- pinMode(13, OUTPUT);
+<<<<<<< HEAD
+ pinMode(D13, OUTPUT);
+=======
+ pinMode(D13, OUTPUT);
+>>>>>>> 8ea8565180f742cc98daed2f29f6e47c5f7aa225
 
 }
 
