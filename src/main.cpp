@@ -10,9 +10,9 @@ int outputValue = 0;        // value output to the PWM (analog out)
 void setup() {
  Serial.begin(9600);
  pinMode(D1, INPUT_PULLUP);
- pinMode(3, OUTPUT);
- pinMode(4, OUTPUT);
- pinMode(13, OUTPUT);
+ pinMode(D3, OUTPUT);
+ pinMode(D4, OUTPUT);
+ pinMode(D13, OUTPUT);
 
 }
 
