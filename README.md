@@ -19,7 +19,7 @@ heatsink to fit mosfets
 
 30mm 5v cooling fan
 
-6 1k resistors
+6 1k resistors (values arent important being used for pullup and gate-drain along with io protection)
 
 470uF 35v elecotrolytic capacitor
 
