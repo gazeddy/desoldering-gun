@@ -13,7 +13,7 @@ void setup() {
   pinMode(Heatergate, OUTPUT);
   pinMode(pumpgatePin, OUTPUT);
   pinMode(inbuiltled, OUTPUT);
-
+  u8g2.begin();
 }
 
 void loop() {
