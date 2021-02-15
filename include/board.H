@@ -14,3 +14,6 @@ const int lcdreset = 13; // not used or connected
 const int enca = 4; 
 const int encb = 5;
 const int encswitch = 6; // pullup required switching to ground
+
+// Neopixel status LED 
+const int led = 7;
