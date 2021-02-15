@@ -24,19 +24,18 @@ void loop() {
   Serial.print("\t switch = ");
   Serial.println(switchVal);
                 
-  // Keep in mind the pull-up means the pushbutton's logic is inverted. It goes
-  // HIGH when it's open, and LOW when it's pressed. Turn on pin 13 when the
-  // button's pressed, and off when it's not:
-  if (switchVal == HIGH ) { 
+ if (switchVal == HIGH) { 
     digitalWrite(4, LOW);
+    Serial.print("Pump Off ");
   } else {
     digitalWrite(4, HIGH);
+    Serial.print("Pump On ");
   }
   if (sensorValue >=135) {
     digitalWrite(3, LOW);
     digitalWrite(13, LOW);
+    Serial.print("Heater Off ");
   } else {
     digitalWrite(3, HIGH);
     digitalWrite(13, HIGH);
-  }
-}
+    Serial.print("Heater On ");
