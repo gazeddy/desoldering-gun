@@ -4,7 +4,7 @@ const int Temp = A0;
 const int switchPin = 1;
 const int Heatergate = 2;
 const int pumpgatePin = 3;
-
+const int inbuiltled = 13;
 // ST9720 SPI interface
 const int lcdclock = 8;
 const int lcddata = 10;

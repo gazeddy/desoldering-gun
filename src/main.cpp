@@ -12,7 +12,7 @@ void setup() {
   pinMode(switchPin, INPUT);
   pinMode(Heatergate, OUTPUT);
   pinMode(pumpgatePin, OUTPUT);
-  pinMode(13, OUTPUT);
+  pinMode(inbuiltled, OUTPUT);
 
 }
 
@@ -39,11 +39,11 @@ void loop() {
   }
   if (sensorValue >=135) {
     digitalWrite(Heatergate, LOW);
-    digitalWrite(13, LOW);
+    digitalWrite(inbuiltled, LOW);
     Serial.print("Heater Off ");
   } else {
     digitalWrite(Heatergate, HIGH);
-    digitalWrite(13, HIGH);
+    digitalWrite(inbuiltled, HIGH);
     Serial.print("Heater On ");
     }
 }
