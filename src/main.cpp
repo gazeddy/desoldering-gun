@@ -1,4 +1,7 @@
 #include <Arduino.h>
+#include <U8g2lib.h>
+#include <SPI.h>
+U8G2_ST7920_128X64_1_SW_SPI u8g2(U8G2_R0, /* clock=*/ 8, /* data=*/ 10, /* CS=*/ 9, /* reset=*/ 13);
 const int Temp = A0;  // Analog input pin that the potentiometer is attached to
 int sensorValue = 0;        // value read from the pot
 
