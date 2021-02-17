@@ -11,9 +11,9 @@ const int lcdchipselect = 9; //CS - RS
 const int lcddata = 10; //MOSI - 
 const int lcdreset = 13; // not used or connected 
 // Rotary Encoder pins
-const int enca = 4; 
+const int enca = 6; 
 const int encb = 5;
-const int encswitch = 6; // pullup required switching to ground
+const int encswitch = 4; // pullup required switching to ground
 
 // Neopixel status LED 
 const int led = 7;
