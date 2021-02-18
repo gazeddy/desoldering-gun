@@ -5,7 +5,7 @@
 
 U8G2_ST7920_128X64_1_SW_SPI u8g2(U8G2_R0, lcdclock, lcddata,lcdchipselect, lcdreset);
 int sensorValue = 0;        // value read from the pot
-
+int setpoint = 0;           //Temperature setpoint
 void setup() {
   //start serial connection
   Serial.begin(9600);
@@ -24,8 +24,11 @@ void loop() {
   //print out the value of the switch and temp sensor
  Serial.print("sensor = ");
   Serial.print(sensorValue);
-  Serial.print("\t switch = ");
-  Serial.println(switchVal);
+  Serial.print(" switch = ");
+  Serial.print(switchVal);
+  Serial.print("\t setpoint = ");
+  Serial.println(setpoint);
+  
                 
   // Keep in mind the pull-up means the switches logic is inverted. It goes
   // HIGH when it's open, and LOW when it's pressed. Turn on inbuilt led when the
